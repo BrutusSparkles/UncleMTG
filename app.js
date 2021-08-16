@@ -1,3 +1,3 @@
-function mtgImageDisplay = () => {
-    document.getElementById("uncleMtgImg1").style.display ='block'
+function mtgImageDisplay() {
+    document.getElementById("uncleMtgImg1").style.display ='block';
 }
