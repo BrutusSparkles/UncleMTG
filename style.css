@@ -1,0 +1,86 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-rows: 3fr 1fr 3fr;
+    grid-template-areas: 
+        "lifeTotal1"
+        "buttonsHere"
+        "lifeTotal2";
+    height: 99vh;
+    width: 100vw;
+}
+.lifeArea1 {
+    grid-area: lifeTotal1;
+    background-color: white;
+}
+
+
+.lifeArea2 {
+    grid-area: lifeTotal2;
+    background-color: white;
+}
+
+.lifeBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 10px;
+    background-color: lightgray;
+    box-shadow: 3px 6px 6px darkgrey;
+    border-radius: 15px;
+    font-size: x-large;
+}
+
+.lifeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.buttonArea {
+    display: grid;
+    grid-area: buttonsHere;
+    background-color: white;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "cardSearch roll menuB planeChase archenemy";
+    padding: 10px 10px;
+}
+
+.butt {
+    margin: 10px 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 6px 6px darkgrey;
+    background-color: lightgray;
+}
+
+.butt h1 {
+    font-size: small;
+}
+
+.cardSearchButton {
+    grid-area: cardSearch;
+}
+
+.rollButton {
+    grid-area: roll;
+}
+
+.menuButton {
+    grid-area: menuB;
+}
+
+.planeChaseButton {
+    grid-area: planeChase;
+}
+
+.archenemyButton {
+    grid-area: archenemy;
+}

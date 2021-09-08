@@ -6,23 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
+    <link rel="stylesheet" href="./landing.css">
     <title>UncleMTG</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="column">
-                <input placeholder="Magic the Gathering card name" type="text">
-            </div>
-            <div class="column">
-                <!-- name of the js function is onClick parameter-->
-                <button onClick="mtgImageDisplay()" type="button">Search</button>
-            </div>
-        </div>
+    <div class="landingHead">
+        <h1>How many players will be in this game?</h1>
     </div>
-    <div class="container">
-        <img src="https://c1.scryfall.com/file/scryfall-cards/large/front/9/b/9bf85d06-9efe-488d-9af0-fb945b346524.jpg?1562781031" id="uncleMtgImg1" style="display:none">
-    </div>
-    <script src="app.js" charset="utf-8"></script>
+    <a href="./2player.html"><div class="landingUI playButt2"><h2>2 Players</h2></div></a>
+    <a href="./3player.html"><div class="landingUI playButt3"><h2>3 Players</h2></div></a>
+    <a href="./4player.html"><div class="landingUI playButt4"><h2>4 Players</h2></div></a>
+    <a href="./5player.html"><div class="landingUI playButt5"><h2>5 Players</h2></div></a>
+    <a href="./6player.html"><div class="landingUI playButt6"><h2>6 Players</h2></div></a>
 </body>
 </html>

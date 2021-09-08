@@ -1,0 +1,59 @@
+body {
+    margin: 0px 10vw 0px 10vw;
+    padding: 0px;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "howManyPlayers"
+        "play2"
+        "play3"
+        "play4"
+        "play5"
+        "play6";
+        height: 99vh;
+        width: 80vw;
+}
+
+.landingHead {
+    grid-area: howManyPlayers;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landingUI {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    background-color: lightgray;
+    border-radius: 15px;
+    box-shadow: 3px 6px 6px darkgrey;
+}
+
+a {
+    text-decoration: none;
+}
+
+.playButt2 {
+    grid-area: play2;
+}
+
+.playButt3 {
+    grid-area: play3;
+}
+
+.playButt4 {
+    grid-area: play4;
+}
+
+.playButt5 {
+    grid-area: play5;
+}
+
+.playButt6 {
+    grid-area: play6;
+}
