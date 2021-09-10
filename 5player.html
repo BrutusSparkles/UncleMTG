@@ -6,25 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./2player.css">
     <link rel="stylesheet" href="./style.css">
+    <script src="./app.js"></script>
     <title>5 player</title>
 </head>
 <body>
     <div class="lifeArea1 lifeContainer">
         <div class="lifeBox">
-            <h1>20</h1>
+            <h1 class="lifeTotal">20</h1>
         </div>
         <div class="lifeBox">
-            <h1>20</h1>
+            <h1 class="lifeTotal">20</h1>
         </div>
         <div class="lifeBox">
-            <h1>20</h1>
+            <h1 class="lifeTotal">20</h1>
         </div>
     </div>
     <div class="buttonArea">
         <div class="butt cardSearchButton">
             <h1>Card Finder</h1>
         </div>
-        <div class="butt rollButton">
+        <div class="butt rollButton" onclick="hideLifeTotals()" style="cursor: pointer;">
             <h1>Roll Dice</h1>
         </div>
         <div class="butt menuButton">
@@ -39,10 +40,10 @@
     </div>
     <div class="lifeArea2 lifeContainer">
         <div class="lifeBox">
-            <h1>20</h1>
+            <h1 class="lifeTotal">20</h1>
         </div>
         <div class="lifeBox">
-            <h1>20</h1>
+            <h1 class="lifeTotal">20</h1>
         </div>
     </div>
 </body>
