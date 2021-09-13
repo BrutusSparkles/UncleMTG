@@ -137,15 +137,5 @@ body {
 .cube__face--4 { transform: rotateY(-90deg) translateZ(50px); }
 .cube__face--5 { transform: rotateX( 90deg) translateZ(50px); }
 .cube__face--6 { transform: rotateX(-90deg) translateZ(50px); }
-
-.rollBtn{
-    background:black;
-    color:white;
-    border:none;
-    margin:auto 0;
-    font-size:1.5em;
-    margin-top:1em;
-    width:200px;
-  }
 /*------------------end-------------------*/
 /*styling for the dice animation ends here*/
