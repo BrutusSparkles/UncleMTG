@@ -2,13 +2,29 @@ var cube = document.querySelector('.cube');
 var rollBtn = document.querySelector('.rollBtn');
 var currentClass = '';
 
+
+//show dice
+function showDice() {
+  var allDice = document.querySelectorAll('.cube');
+  for (let i = 0; i < allDice.length; i++) {
+    allDice[i].style.display = 'block';
+}}
+
 //make the life totals disappear
 function hideLifeTotals() {
   let lifeTotals = document.querySelectorAll('.lifeTotal');
   for (let i = 0; i < lifeTotals.length; i++) {
     lifeTotals[i].style.display = 'none';
   }
+  showDice();
 }
+
+//hide dice
+function hideDice() {
+  var allDice = document.querySelectorAll('.cube');
+  for (let i = 0; i < allDice.length; i++) {
+    allDice[i].style.display = 'none';
+}}
 
 //get a random number for roll dice funtion
 function getRandomInt(min, max) {
@@ -23,21 +39,24 @@ function showLifeTotals() {
   for (let i = 0; i < lifeTotals.length; i++) {
     lifeTotals[i].style.display = 'block';
   }
+  hideDice();
 }
 
 //this function handles the actual rolling of the dice
 function rollDice() {
     hideLifeTotals();
-    var randNum = getRandomInt(1,7);
-    console.log(randNum);
+    var allDice = document.querySelectorAll('.cube');
+  for (let i = 0; i < allDice.length; i++) {
+    var randNum = getRandomInt(1, 7);
     let showClass = 'show-' + randNum;
-    console.log(showClass)
-    if ( currentClass ) {
-        cube.classList.remove( currentClass );
+    if (currentClass) {
+        allDice[i].classList.remove(currentClass);
     }
-    cube.classList.add(showClass);
+    allDice[i].classList.add(showClass);
     currentClass = showClass;
+  }
+    setTimeout(showLifeTotals, 4000);
 }
-// set initial side
-rollDice();
+
+//start with life totals visable
 showLifeTotals();

@@ -4,25 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./2player.css">
     <link rel="stylesheet" href="./style.css">
-    <script src="./app.js"></script>
+    <script src="dice.js" defer></script>
     <title>3 player</title>
 </head>
 <body>
     <div class="lifeArea1 lifeContainer">
         <div class="lifeBox">
             <h1 class="lifeTotal">20</h1>
+            <div class = "scene">
+                <div class="cube">
+                 <div class="cube__face cube__face--1">1</div>
+                 <div class="cube__face cube__face--2">2</div>
+                 <div class="cube__face cube__face--3">3</div>
+                 <div class="cube__face cube__face--4">4</div>
+                 <div class="cube__face cube__face--5">5</div>
+                 <div class="cube__face cube__face--6">6</div>
+               </div>
+            </div>
         </div>
         <div class="lifeBox">
             <h1 class="lifeTotal">20</h1>
+            <div class = "scene">
+                <div class="cube">
+                 <div class="cube__face cube__face--1">1</div>
+                 <div class="cube__face cube__face--2">2</div>
+                 <div class="cube__face cube__face--3">3</div>
+                 <div class="cube__face cube__face--4">4</div>
+                 <div class="cube__face cube__face--5">5</div>
+                 <div class="cube__face cube__face--6">6</div>
+               </div>
+            </div>
         </div>
     </div>
     <div class="buttonArea">
         <div class="butt cardSearchButton">
             <h1>Card Finder</h1>
         </div>
-        <div class="butt rollButton" onclick="hideLifeTotals()" style="cursor: pointer;">
+        <div class="butt rollButton rollBtn" onclick="rollDice();" style="cursor: pointer;">
             <h1>Roll Dice</h1>
         </div>
         <div class="butt menuButton">
@@ -38,6 +57,16 @@
     <div class="lifeArea2 lifeContainer">
         <div class="lifeBox">
             <h1 class="lifeTotal">20</h1>
+            <div class = "scene">
+                <div class="cube">
+                 <div class="cube__face cube__face--1">1</div>
+                 <div class="cube__face cube__face--2">2</div>
+                 <div class="cube__face cube__face--3">3</div>
+                 <div class="cube__face cube__face--4">4</div>
+                 <div class="cube__face cube__face--5">5</div>
+                 <div class="cube__face cube__face--6">6</div>
+               </div>
+            </div>
         </div>
     </div>
 </body>
