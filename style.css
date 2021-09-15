@@ -48,6 +48,31 @@ body {
     margin-right: auto; 
     width: 100px; 
     padding: 0px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.add {
+    border: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    height: 100%;
+    width: 100%;
+    border-radius: 90px;
+    background-color: white; opacity: 0.25;
+}
+
+.sub {
+    border: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    height: 100%;
+    width: 100%;
+    border-radius: 90px;
+    background-color: white; opacity: 0.25;
 }
 
 .lifeContainer {
