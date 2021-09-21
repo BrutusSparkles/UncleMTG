@@ -1,6 +1,7 @@
 var cube = document.querySelector('.cube');
 var rollBtn = document.querySelector('.rollBtn');
 var currentClass = '';
+let showClass = '';
 
 
 //show dice
@@ -50,7 +51,7 @@ function rollDice() {
     var randNum = getRandomInt(1, 7);
     let showClass = 'show-' + randNum;
     if (currentClass) {
-        allDice[i].classList.remove(currentClass);
+        allDice[i].classList.remove(showClass);
     }
     allDice[i].classList.add(showClass);
     currentClass = showClass;
@@ -60,3 +61,4 @@ function rollDice() {
 
 //start with life totals visable
 showLifeTotals();
+rollBtn.addEventListener("click", rollDice);

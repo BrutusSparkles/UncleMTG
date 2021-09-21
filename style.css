@@ -4,6 +4,22 @@ body {
     margin: 0px;
     padding: 0px;
     display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "LifeArea"
+        "PlanechaseArea"
+        "ArchenemyArea";
+    height: auto;
+    width: auto;
+}
+/*styling for the Life Counting Page starts here*/
+/*-----------------start--------------------*/
+
+.LifeArea {
+    grid-area: LifeArea;
+    margin: 0px;
+    padding: 0px;
+    display: grid;
     grid-template-rows: 3fr 1fr 3fr;
     grid-template-areas: 
         "lifeTotal1"
@@ -14,6 +30,7 @@ body {
     max-height: 99vh;
     max-width: 100vw;
 }
+
 .lifeArea1 {
     grid-area: lifeTotal1;
     background-color: white;
@@ -81,6 +98,9 @@ body {
     align-items: center;
     margin: 10px;
 }
+
+/*------------------end-------------------*/
+/*styling for the Life Counting Page ends here*/
 
 .buttonArea {
     display: grid;
@@ -178,3 +198,35 @@ body {
 .cube__face--6 { transform: rotateX(-90deg) translateZ(50px); }
 /*------------------end-------------------*/
 /*styling for the dice animation ends here*/
+
+/*styling for the Planechase Page starts here*/
+/*-----------------start--------------------*/
+.PlanechaseArea {
+    grid-area: PlanechaseArea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-color: fuchsia;
+}
+/*------------------end-------------------*/
+/*styling for the Planechase Page ends here*/
+
+/*styling for the Archenemy Page starts here*/
+/*-----------------start--------------------*/
+.ArchenemyArea {
+    grid-area: ArchenemyArea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-color: goldenrod;
+}
+/*------------------end-------------------*/
+/*styling for the Archenemy Page ends here*/

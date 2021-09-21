@@ -9,56 +9,70 @@
     <title>2 player</title>
 </head>
 <body>
-    <div class="lifeArea1 lifeContainer">
-        <div class="lifeBox">
-            <div class="lifeTotal">
-                <button class="add">+</button>
-                <div class="p1Life">20</div>
-                <button class="sub">-</button>
+    
+    <div class="LifeArea">
+        <div class="lifeArea1 lifeContainer">
+            <div class="lifeBox">
+                <div class="lifeTotal">
+                    <button class="add">+</button>
+                    <div class="p1Life">20</div>
+                    <button class="sub">-</button>
+                </div>
+                <div class="scene">
+                    <div class="cube">
+                        <div class="cube__face cube__face--1">1</div>
+                        <div class="cube__face cube__face--2">2</div>
+                        <div class="cube__face cube__face--3">3</div>
+                        <div class="cube__face cube__face--4">4</div>
+                        <div class="cube__face cube__face--5">5</div>
+                        <div class="cube__face cube__face--6">6</div>
+                    </div>
+                </div>
             </div>
-            <div class = "scene">
-                <div class="cube">
-                 <div class="cube__face cube__face--1">1</div>
-                 <div class="cube__face cube__face--2">2</div>
-                 <div class="cube__face cube__face--3">3</div>
-                 <div class="cube__face cube__face--4">4</div>
-                 <div class="cube__face cube__face--5">5</div>
-                 <div class="cube__face cube__face--6">6</div>
-               </div>
+        </div>
+        <div class="buttonArea">
+            <div class="butt cardSearchButton">
+                <h1>Card Finder</h1>
+            </div>
+            <div class="butt rollButton rollBtn" style="cursor: pointer;">
+                <h1>Roll Dice</h1>
+            </div>
+            <div class="butt menuButton">
+                <h1>Menu</h1>
+            </div>
+            <div class="butt planeChaseButton">
+                <a href="#PlanechaseArea"><h1>Planechase</h1></a>
+            </div>
+            <div class="butt archenemyButton">
+                <a href="#ArchenemyArea"><h1>Archenemy</h1></a>
+            </div>
+        </div>
+        <div class="lifeArea2 lifeContainer">
+            <div class="lifeBox">
+                <h1 class="lifeTotal">20</h1>
+                <div class="scene">
+                    <div class="cube">
+                        <div class="cube__face cube__face--1">1</div>
+                        <div class="cube__face cube__face--2">2</div>
+                        <div class="cube__face cube__face--3">3</div>
+                        <div class="cube__face cube__face--4">4</div>
+                        <div class="cube__face cube__face--5">5</div>
+                        <div class="cube__face cube__face--6">6</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="buttonArea">
-        <div class="butt cardSearchButton">
-            <h1>Card Finder</h1>
-        </div>
-        <div class="butt rollButton rollBtn" onclick="rollDice();" style="cursor: pointer;">
-            <h1>Roll Dice</h1>
-        </div>
-        <div class="butt menuButton">
-            <h1>Menu</h1>
-        </div>
-        <div class="butt planeChaseButton">
-            <h1>Planechase</h1>
-        </div>
-        <div class="butt archenemyButton">
-            <a href="./dice.html"><h1>Archenemy</h1></a>
-        </div>
+
+    <div class="PlanechaseArea" id="PlanechaseArea">
+        <h3>This area is currently under construction</h3>
+        <h1>Planechase</h1>
     </div>
-    <div class="lifeArea2 lifeContainer">
-        <div class="lifeBox">
-            <h1 class="lifeTotal">20</h1>
-            <div class = "scene">
-                <div class="cube">
-                 <div class="cube__face cube__face--1">1</div>
-                 <div class="cube__face cube__face--2">2</div>
-                 <div class="cube__face cube__face--3">3</div>
-                 <div class="cube__face cube__face--4">4</div>
-                 <div class="cube__face cube__face--5">5</div>
-                 <div class="cube__face cube__face--6">6</div>
-               </div>
-            </div>
-        </div>
+
+    <div class="ArchenemyArea" id="ArchenemyArea">
+        <h3>This area is currently under construction</h3>
+        <h1>Archenemy</h1>
     </div>
+
 </body>
 </html>
